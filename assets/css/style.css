@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Segoe Script", sans-serif;
+  --third-family: "Dancing Script", sans-serif;
+  --gren-gray-scale-900: #002603;
+  --gren-gray-scale-800: #173b1a;
+  --gren-gray-scale-700: #2b572e;
+  --gren-gray-scale-600: #406b42;
+  --gren-gray-scale-500: #618062;
+  --gren-gray-scale-400: #7a997c;
+  --gren-gray-scale-300: #96b297;
+  --gren-gray-scale-200: #b4ccb4;
+  --gren-gray-scale-100: #dae5da;
+  --gren-gray-scale-50: #edf2ee;
+  --gray-scale-gray-900: #1a1a1a;
+  --gray-scale-gray-800: #333333;
+  --gray-scale-gray-700: #4d4d4d;
+  --gray-scale-gray-600: #666666;
+  --gray-scale-gray-500: #808080;
+  --gray-scale-gray-400: #999999;
+  --gray-scale-gray-300: #b3b3b3;
+  --gray-scale-gray-200: #cccccc;
+  --gray-scale-gray-100: #e5e5e5;
+  --gray-scale-gray-50: #f2f2f2;
+  --gray-scale-white: #ffffff;
+  --branding-success-bright: #84d187;
+  --branding-success: #00b207;
+  --branding-success-dark: #2c742f;
+  --branding-warning: #ff8a00;
+  --branding-error: #ea4b48;
+}
+
+/* *CSS common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+ul,
+ol,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* .container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* * CSS common code end*/
+
+/* *header Top start */
+header .headerTop {
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  background: var(--gray-scale-gray-800);
+  padding: 12px 0px;
+}
+
+header .headerTop .headerTopLeft .iconify {
+  width: 16px;
+  height: 19px;
+  color: var(--gray-scale-gray-300);
+}
+
+header .headerTop .headerTopLeft .address {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--gray-scale-gray-300);
+}
+
+header .headerTop .headerTopRight select {
+  background: transparent;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--gray-scale-gray-300);
+}
+
+header .headerTop .headerTopRight li {
+  display: flex;
+  align-items: center;
+}
+
+header .headerTop .headerTopRight .divider {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--gray-scale-gray-300);
+}
+
+header .headerTop .headerTopRight ul {
+  justify-content: flex-end;
+  margin-bottom: 0;
+  padding-right: 0;
+}
+
+header .headerTop .headerTopRight ul a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--gray-scale-gray-300);
+}
+
+/* *header Top end*/
+
+/* *header Middle start */
+header .headerMiddle {
+  padding: 16px 0;
+  background-color: var(--gray-scale-white);
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField form {
+  display: flex;
+  width: 100%;
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField input {
+  padding: 12px 18px 12px 38px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid var(--gray-scale-gray-100);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--gray-scale-gray-500);
+  outline: none;
+}
+
+.searchInput {
+  position: relative;
+  flex: 1;
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField .searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  color: var(--gray-scale-gray-700);
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField button {
+  border-radius: 0 6px 6px 0;
+  padding: 12px 24px;
+  width: 110px;
+  border: none;
+  background: var(--branding-success);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+header .headerMiddle .headerMiddleSearchBar .searchField button:hover {
+  background: var(--branding-success-dark);
+}
+
+header .headerMiddle .headerMiddleActivities .iconify-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+header .headerMiddle .headerMiddleActivities li a {
+  color: var(--gray-scale-gray-900);
+}
+
+header .headerMiddle .headerMiddleActivities .cartText p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 120%;
+  color: var(--gray-scale-gray-700);
+}
+
+header .headerMiddle .headerMiddleActivities .cartText span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--gray-scale-gray-900);
+}
+
+header .headerMiddle .headerMiddleActivities .cart {
+  position: relative;
+}
+
+header .headerMiddle .headerMiddleActivities .cart .cartQty {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border: 1px solid var(--branding-error);
+  background: var(--branding-success);
+  border-radius: 16px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--gray-scale-white);
+}
+
+/* *header Middle end */
+
+/* ==========================================================================
+   *Header Bottom / Navigation Bar (Figma Design - #F2F2F2 Background)
+   ========================================================================== */
+.headerBottom {
+  background-color: var(--gray-scale-gray-50);
+  border: none;
+  position: relative;
+  z-index: 100;
+  padding: 6px 0;
+}
+
+/* 1. All Categories Button & Dropdown Menu */
+.categoryDropdown {
+  position: relative;
+  z-index: 105;
+  width: auto;
+}
+
+.categoryDropdown .categoryBtn {
+  background-color: var(--branding-success);
+  color: var(--gray-scale-white);
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 10px 16px;
+  width: 218px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.categoryDropdown .categoryBtn:hover,
+.categoryDropdown .categoryBtn.active {
+  background-color: var(--branding-success-dark);
+}
+
+.categoryDropdown .categoryBtn .categoryMenuIcon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.categoryDropdown .categoryBtn .btnText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.categoryDropdown .categoryBtn .arrowIcon {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.categoryDropdown .categoryBtn.active .arrowIcon {
+  transform: rotate(180deg);
+}
+
+/* Category Dropdown List */
+.categoryDropdown .categoryList {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 218px;
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-scale-gray-100);
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1000;
+}
+
+.categoryDropdown .categoryList.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.categoryDropdown .categoryList li a {
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gray-scale-gray-700);
+  transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+.categoryDropdown .categoryList li a iconify-icon {
+  font-size: 16px;
+  color: var(--gray-scale-gray-500);
+  transition: color 0.2s ease;
+}
+
+.categoryDropdown .categoryList li a:hover {
+  background-color: var(--gren-gray-scale-50);
+  color: var(--branding-success);
+  padding-left: 20px;
+}
+
+.categoryDropdown .categoryList li a:hover iconify-icon {
+  color: var(--branding-success);
+}
+
+/* 2. Main Navigation Links (Center) */
+.headerBottom .mainNav .navLinks {
+  gap: 28px;
+}
+
+.headerBottom .mainNav .navItem {
+  position: relative;
+}
+
+.headerBottom .mainNav .navItem .navLink {
+  color: var(--gray-scale-gray-600);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.headerBottom .mainNav .navItem .navLink i {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.headerBottom .mainNav .navItem .navLink:hover,
+.headerBottom .mainNav .navItem .navLink.active {
+  color: var(--branding-success);
+}
+
+.headerBottom .mainNav .navItem:hover .navLink i {
+  transform: rotate(180deg);
+}
+
+/* Sub-Dropdown Menus for Nav Links */
+.headerBottom .mainNav .subDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-scale-gray-100);
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1000;
+}
+
+.headerBottom .mainNav .navItem:hover .subDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.headerBottom .mainNav .subDropdown li a {
+  display: block;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gray-scale-gray-700);
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.headerBottom .mainNav .subDropdown li a:hover {
+  background-color: var(--gren-gray-scale-50);
+  color: var(--branding-success);
+  padding-left: 22px;
+}
+
+/* 3. Phone Contact Section (Right) */
+.headerBottom .phoneContact {
+  color: var(--gray-scale-gray-900);
+}
+
+.headerBottom .phoneContact .phoneIcon {
+  color: var(--gray-scale-gray-900);
+  font-size: 18px;
+}
+
+.headerBottom .phoneContact .phoneNumber {
+  color: var(--gray-scale-gray-900);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.headerBottom .phoneContact .phoneNumber:hover {
+  color: var(--branding-success);
+}
+
+/* 4. Mobile Navbar Toggler Button */
+.headerBottom .navbarTogglerBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* 5. Mobile Offcanvas Menu Styles */
+.mobileNavOffcanvas {
+  max-width: 320px;
+}
+
+.mobileNavOffcanvas .mobileCatBtn {
+  background-color: var(--branding-success);
+  border: none;
+  color: var(--gray-scale-white);
+  transition: background-color 0.2s ease;
+}
+
+.mobileNavOffcanvas .mobileCatBtn:hover {
+  background-color: var(--branding-success-dark);
+}
+
+.mobileNavOffcanvas .mobileNavItem a {
+  text-decoration: none;
+}
+
+.mobileNavOffcanvas .mobileNavItem a:hover {
+  color: var(--branding-success) !important;
+}
+
+/* ==========================================================================
+   *Hero Banner Section (Slick Slider Carousel) Start
+   ========================================================================== */
+.heroBannerSection {
+  background: var(--gray-scale-white);
+  position: relative;
+  padding: 45px 0 60px;
+}
+
+.heroBannerSection .container {
+  position: relative !important;
+}
+
+/* Slick Slider কে container এর ভেতরে রাখা */
+.heroBannerSection .heroSlider.slick-slider {
+  position: static !important;
+}
+
+.heroSlider .heroSlide {
+  outline: none;
+  padding: 0 70px;
+  /* বাটন ও কনটেন্টের মাঝে নিরাপদ দূরত্ব */
+}
+
+/* Subtitle */
+.heroContent .heroSubtitle {
+  font-family: var(--second-family);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--branding-success);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Main Heading */
+.heroContent .heroTitle {
+  font-family: var(--font-family);
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--gren-gray-scale-900);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+/* Discount Offer Text */
+.heroContent .heroOffer .offerText {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray-scale-gray-700);
+  margin-bottom: 10px;
+}
+
+.heroContent .heroOffer .offerHighlight {
+  color: var(--branding-warning);
+  font-weight: 700;
+}
+
+/* Description */
+.heroContent .heroDescription {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--gren-gray-scale-500);
+  margin-bottom: 28px;
+  max-width: 440px;
+}
+
+/* CTA Shop now Button */
+.heroContent .heroBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--branding-success);
+  color: var(--gray-scale-white);
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 43px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 178, 7, 0.25);
+}
+
+.heroContent .heroBtn:hover {
+  background-color: var(--branding-success-dark);
+  color: var(--gray-scale-white);
+  transform: translateY(-2px);
+}
+
+.heroContent .heroBtn .btnIcon {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.heroContent .heroBtn:hover .btnIcon {
+  transform: translateX(4px);
+}
+
+/* ছবি ও লেখার মাঝে ব্যালেন্সড দূরত্ব */
+.heroContent {
+  padding-left: 35px;
+}
+
+/* Image Wrapper */
+.heroImageWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.heroImageWrapper .heroImg {
+  width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  mix-blend-mode: multiply;
+}
+
+/* 70% OFF Orange Circle Badge */
+.heroDiscountBadge {
+  position: absolute;
+  top: 12%;
+  right: 2%;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--branding-warning, #FF8A00);
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(255, 138, 0, 0.3);
+}
+
+.heroDiscountBadge .discountNum {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.heroDiscountBadge .discountText {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Custom Prev & Next Arrows - একদম .container এর ভেতরে বসবে */
+.heroPrevBtn,
+.heroNextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-scale-gray-100, #E6E6E6);
+  color: var(--gren-gray-scale-900, #1A1A1A);
+  font-size: 18px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.heroPrevBtn {
+  left: 12px;
+  /* Container এর বাম প্রান্তের ভেতরে */
+}
+
+.heroNextBtn {
+  right: 12px;
+  /* Container এর ডান প্রান্তের ভেতরে */
+}
+
+.heroPrevBtn:hover,
+.heroNextBtn:hover {
+  background-color: var(--branding-success);
+  border-color: var(--branding-success);
+  color: #FFFFFF;
+}
+
+/* Slick Dots */
+.heroBannerSection .slick-dots {
+  bottom: 12px;
+}
+
+.heroBannerSection .slick-dots li {
+  margin: 0 4px;
+  width: auto;
+  height: auto;
+}
+
+.heroBannerSection .slick-dots li button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #B4CCB4;
+  transition: all 0.3s ease;
+}
+
+.heroBannerSection .slick-dots li button::before {
+  display: none;
+}
+
+.heroBannerSection .slick-dots li.slick-active button {
+  width: 18px;
+  border-radius: 10px;
+  background-color: var(--branding-success, #00B207);
+}
+
+/* ==========================================================================
+   *Hero Banner Section End
+   ========================================================================== */

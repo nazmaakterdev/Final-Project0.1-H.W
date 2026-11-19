@@ -1,0 +1,302 @@
+/* ==========================================================================
+   Responsive Styles for EcoBazar
+   ========================================================================== */
+
+/* Large screens and below (<= 991.98px: Tablets & Mobiles) */
+@media (max-width: 991.98px) {
+
+  /* Header Top */
+  header .headerTop .headerTopLeft .address {
+    font-size: 11px;
+  }
+
+  /* Header Middle (Row 1: Logo + Activities, Row 2: Full Width Search Bar) */
+  header .headerMiddle {
+    padding: 14px 0;
+  }
+
+  header .headerMiddle .headerLogo img {
+    max-height: 36px;
+    width: auto;
+  }
+
+  header .headerMiddle .headerMiddleActivities ul {
+    justify-content: flex-end !important;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar {
+    margin-top: 14px;
+    width: 100%;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField input {
+    height: 42px;
+    font-size: 14px;
+    padding: 10px 16px 10px 38px;
+    width: 100%;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField .searchIcon {
+    top: 9px;
+    left: 12px;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField button {
+    height: 42px;
+    padding: 0 20px;
+    font-size: 14px;
+    width: auto;
+    min-width: 90px;
+  }
+
+  /* Header Bottom / Nav */
+  .headerBottom {
+    padding: 6px 0;
+  }
+
+  .headerBottom .categoryDropdown .categoryBtn {
+    width: 180px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .headerBottom .categoryDropdown .categoryBtn .categoryMenuIcon {
+    font-size: 16px;
+  }
+
+  .headerBottom .categoryDropdown .categoryList {
+    width: 180px;
+    min-width: 180px;
+  }
+
+  .headerBottom .phoneContact .phoneNumber {
+    font-size: 13px;
+  }
+
+  /* Hero Banner Responsive (Tablet & Mobile) */
+  .heroBannerSection {
+    padding: 24px 0 40px;
+  }
+
+  .heroSlider .heroSlide {
+    padding: 0 45px;
+  }
+
+  .heroContent {
+    padding-left: 0 !important;
+  }
+
+  .heroContent .heroTitle {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .heroContent .heroOffer .offerText {
+    font-size: 16px;
+  }
+
+  .heroContent .heroDescription {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .heroContent .heroBtn {
+    padding: 12px 28px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .heroImageWrapper .heroImg {
+    max-height: 360px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge {
+    width: 76px;
+    height: 76px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge .discountNum {
+    font-size: 20px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge .discountText {
+    font-size: 11px;
+  }
+
+  .heroPrevBtn {
+    left: 10px;
+  }
+
+  .heroNextBtn {
+    right: 10px;
+  }
+}
+
+/* Medium & Small screens (<= 767.98px: Tablets & Phones) */
+@media (max-width: 767.98px) {
+  .heroBannerSection {
+    padding: 20px 0 38px;
+  }
+
+  .heroSlider .heroSlide {
+    padding: 0 40px;
+  }
+
+  .heroContent {
+    padding-left: 0 !important;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .heroContent .heroDescription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroContent .heroBtn {
+    width: auto !important;
+    min-width: 155px;
+    padding: 11px 24px !important;
+    white-space: nowrap !important;
+  }
+
+  .heroImageWrapper .heroImg {
+    max-height: 290px;
+  }
+
+  .heroPrevBtn,
+  .heroNextBtn {
+    display: flex !important;
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+
+  .heroPrevBtn {
+    left: 6px;
+  }
+
+  .heroNextBtn {
+    right: 6px;
+  }
+}
+
+/* Small devices (<= 575.98px: Mobile Phones) */
+@media (max-width: 575.98px) {
+
+  /* Header Middle */
+  header .headerMiddle {
+    padding: 12px 0;
+  }
+
+  header .headerMiddle .headerLogo img {
+    max-height: 30px;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar {
+    margin-top: 10px;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField input {
+    height: 38px;
+    font-size: 13px;
+    padding: 8px 12px 8px 34px;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField .searchIcon {
+    top: 8px;
+    left: 10px;
+  }
+
+  header .headerMiddle .headerMiddleSearchBar .searchField button {
+    height: 38px;
+    padding: 0 16px;
+    font-size: 13px;
+    min-width: 75px;
+  }
+
+  header .headerMiddle .headerMiddleActivities .iconify-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* Header Bottom / Nav */
+  .headerBottom .categoryDropdown .categoryBtn {
+    width: 155px;
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .headerBottom .categoryDropdown .categoryBtn .btnText {
+    font-size: 12px;
+  }
+
+  .headerBottom .categoryDropdown .categoryList {
+    width: 165px;
+    min-width: 165px;
+  }
+
+  .headerBottom .categoryDropdown .categoryList li a {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .headerBottom .phoneContact {
+    display: none !important;
+  }
+
+  /* Hero Banner on Small Mobile */
+  .heroSlider .heroSlide {
+    padding: 0 36px;
+  }
+
+  .heroContent .heroSubtitle {
+    font-size: 12px;
+  }
+
+  .heroContent .heroTitle {
+    font-size: 28px;
+    line-height: 1.22;
+  }
+
+  .heroContent .heroOffer .offerText {
+    font-size: 14px;
+  }
+
+  .heroContent .heroDescription {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .heroContent .heroBtn {
+    padding: 10px 22px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+  }
+
+  .heroImageWrapper .heroImg {
+    max-height: 230px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge {
+    width: 64px;
+    height: 64px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge .discountNum {
+    font-size: 17px;
+  }
+
+  .heroImageWrapper .heroDiscountBadge .discountText {
+    font-size: 10px;
+  }
+}

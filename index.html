@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoBazar – Fresh Fruits & Vegetables Delivered Online</title>
+  <meta name="title" content="EcoBazar" />
+  <meta name="description" content="EcoBazar sells fresh vegetables and fruits online." />
+  <meta name="keywords" content="apple, mango, sugar" />
+  <meta name="author" content="CH FDL - MASTER" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- *Css & Font Links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- *Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- *Iconify Icon Script CDN -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <!-- *Header Section Start -->
+  <header>
+    <div class="headerTop">
+      <div class="container">
+        <div class="row">
+          <div class="headerTopLeft d-flex gap-2 col-lg-9 justify-content-center justify-content-lg-start">
+            <span class="iconify d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <circle cx="12" cy="10" r="3" />
+                  <path
+                    d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8" />
+                </g>
+              </svg>
+            </span>
+            <p class="address">
+              Store Location: Lincoln- 344, Illinois, Chicago, USA
+            </p>
+          </div>
+          <div class="headerTopRight col-lg-3 d-lg-block d-none">
+            <ul class="d-flex gap-2 align-items-center justify-content-end mb-0">
+              <li>
+                <select>
+                  <option value="ENG">ENG</option>
+                  <option value="BN">BN</option>
+                </select>
+              </li>
+              <li>
+                <select>
+                  <option value="USD">USD</option>
+                  <option value="BDT">BDT</option>
+                </select>
+              </li>
+              <li class="divider mx-2">|</li>
+              <li><a href="">Sign IN</a></li>
+              <li class="divider">/</li>
+              <li><a href="">Sign UP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="headerMiddle">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- 1. Logo (col-6 order-1 on mobile/tablet, col-lg-3 order-lg-1 on desktop) -->
+          <div class="headerLogo col-6 col-lg-3 order-1 order-lg-1">
+            <a href="index.html"><img src="./assets/images/EcobazarLogo.png" alt="EcobazarLogo"></a>
+          </div>
+
+          <!-- 2. Search Bar (col-12 order-3 on mobile/tablet, col-lg-6 order-lg-2 on desktop) -->
+          <div class="headerMiddleSearchBar col-12 col-lg-6 order-3 order-lg-2">
+            <div class="searchField">
+              <form action="">
+                <div class="searchInput d-flex">
+                  <input type="text" placeholder="Search for products...">
+                  <span class="searchIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M14.385 15.446a6.75 6.75 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06zm-7.926-1.562a5.25 5.25 0 1 1 7.43-.005l-.005.005l-.005.004a5.25 5.25 0 0 1-7.42-.004"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </div>
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- 3. Activities: Wishlist & Cart (col-6 order-2 on mobile/tablet, col-lg-3 order-lg-3 on desktop) -->
+          <div class="headerMiddleActivities col-6 col-lg-3 order-2 order-lg-3">
+            <ul class="d-flex gap-2 align-items-center justify-content-end mb-0">
+              <li>
+                <a href="">
+                  <span class="iconify-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                      <path d="M0 0h1024v1024H0z" fill="none" />
+                      <path fill="currentColor"
+                        d="M923 283.6a260 260 0 0 0-56.9-82.8a264.4 264.4 0 0 0-84-55.5A265.3 265.3 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39q-15 9.15-28.5 20.1q-13.5-10.95-28.5-20.1c-41.8-25.5-89.9-39-139.2-39c-35.5 0-69.9 6.8-102.4 20.3c-31.4 13-59.7 31.7-84 55.5a258.4 258.4 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9c0 33.3 6.8 68 20.3 103.3c11.3 29.5 27.5 60.1 48.2 91c32.8 48.9 77.9 99.9 133.9 151.6c92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3c56-51.7 101.1-102.7 133.9-151.6c20.7-30.9 37-61.5 48.2-91c13.5-35.3 20.3-70 20.3-103.3c.1-35.3-7-69.6-20.9-101.9M512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5c0 201.2-356 429.3-356 429.3" />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="divider">|</li>
+              <li>
+                <a href="">
+                  <div class="d-flex gap-2 align-items-center">
+                    <div class="cart d-flex">
+                      <span class="iconify-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                          <path d="M0 0h24v24H0z" fill="none" />
+                          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path
+                              d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16z" />
+                            <path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" />
+                          </g>
+                        </svg>
+                      </span>
+                      <span class="cartQty">2</span>
+                    </div>
+                    <div class="cartText d-none d-sm-block">
+                      <p>Shopping cart:</p>
+                      <span>$57.00</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *Header Bottom / Navigation Bar Start -->
+    <div class="headerBottom">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left: All Categories Dropdown Button (col-lg-3 col-auto) -->
+          <div class="col-lg-3 col-auto">
+            <div class="categoryDropdown position-relative">
+              <button class="categoryBtn d-flex align-items-center justify-content-between" type="button"
+                id="categoryMenuToggle" aria-expanded="false">
+                <span class="d-flex align-items-center gap-2">
+                  <iconify-icon icon="lucide:menu" class="categoryMenuIcon"></iconify-icon>
+                  <span class="btnText">All Categories</span>
+                </span>
+                <i class="bi bi-chevron-down arrowIcon"></i>
+              </button>
+
+              <!-- Category Menu List -->
+              <ul class="categoryList" id="categoryDropdownList">
+                <li><a href="#"><iconify-icon icon="lucide:apple" class="me-2"></iconify-icon>Fresh Fruit</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:salad" class="me-2"></iconify-icon>Vegetables</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:fish" class="me-2"></iconify-icon>River Fish</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:egg" class="me-2"></iconify-icon>Meat & Eggs</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:coffee" class="me-2"></iconify-icon>Drinks & Water</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:cookie" class="me-2"></iconify-icon>Snacks</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:milk" class="me-2"></iconify-icon>Milk & Dairy</a></li>
+                <li><a href="#"><iconify-icon icon="lucide:cake" class="me-2"></iconify-icon>Bakery & Breads</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Center: Desktop Main Navigation Links (col-lg-6 d-none d-lg-block) -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <nav class="mainNav">
+              <ul class="navLinks d-flex align-items-center justify-content-center mb-0">
+                <li class="navItem hasDropdown position-relative">
+                  <a href="index.html" class="navLink active d-flex align-items-center gap-1">
+                    Home <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="subDropdown">
+                    <li><a href="#">Home 1 (Default)</a></li>
+                    <li><a href="#">Home 2 (Grocery)</a></li>
+                    <li><a href="#">Home 3 (Supermarket)</a></li>
+                  </ul>
+                </li>
+                <li class="navItem hasDropdown position-relative">
+                  <a href="#" class="navLink d-flex align-items-center gap-1">
+                    Shop <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="subDropdown">
+                    <li><a href="#">Shop Grid</a></li>
+                    <li><a href="#">Shop List</a></li>
+                    <li><a href="#">Product Details</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="navItem hasDropdown position-relative">
+                  <a href="#" class="navLink d-flex align-items-center gap-1">
+                    Pages <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="subDropdown">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">404 Error</a></li>
+                  </ul>
+                </li>
+                <li class="navItem hasDropdown position-relative">
+                  <a href="#" class="navLink d-flex align-items-center gap-1">
+                    Blog <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="subDropdown">
+                    <li><a href="#">Blog Grid</a></li>
+                    <li><a href="#">Blog List</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="navItem">
+                  <a href="#" class="navLink">About Us</a>
+                </li>
+                <li class="navItem">
+                  <a href="#" class="navLink">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Right: Phone Contact Section & Mobile Toggler (col-lg-3 col-auto ms-auto ms-lg-0) -->
+          <div class="col-lg-3 col-auto ms-auto ms-lg-0 d-flex align-items-center justify-content-end gap-3">
+            <div class="phoneContact d-none d-sm-flex align-items-center gap-2">
+              <span class="phoneIcon d-flex align-items-center justify-content-center">
+                <iconify-icon icon="lucide:phone-call" class="fs-5"></iconify-icon>
+              </span>
+              <a href="tel:2195550114" class="phoneNumber">(219) 555-0114</a>
+            </div>
+
+            <!-- Mobile Navbar Toggler (visible on screens < 992px) -->
+            <button class="navbarTogglerBtn d-lg-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+              <i class="bi bi-list fs-2 text-dark"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- *Header Bottom / Navigation Bar End -->
+  </header>
+  <!-- *Header Section End -->
+
+  <!-- *Mobile Offcanvas Menu Start -->
+  <div class="offcanvas offcanvas-start mobileNavOffcanvas" tabindex="-1" id="mobileNavOffcanvas"
+    aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <a href="index.html" class="offcanvasLogo">
+        <img src="./assets/images/EcobazarLogo.png" alt="Ecobazar Logo" height="34">
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <!-- Mobile All Categories Accordion -->
+      <div class="mobileCategorySection mb-4">
+        <button class="mobileCatBtn w-100 d-flex align-items-center justify-content-between p-3 rounded" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mobileCatCollapse" aria-expanded="false">
+          <span class="d-flex align-items-center gap-2 text-white fw-semibold">
+            <iconify-icon icon="lucide:menu" class="fs-5"></iconify-icon> All Categories
+          </span>
+          <i class="bi bi-chevron-down text-white"></i>
+        </button>
+        <div class="collapse mt-2" id="mobileCatCollapse">
+          <ul class="list-group list-group-flush border rounded">
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:apple"></iconify-icon> Fresh Fruit</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:salad"></iconify-icon> Vegetables</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:fish"></iconify-icon> River Fish</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:egg"></iconify-icon> Meat & Eggs</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:coffee"></iconify-icon> Drinks & Water</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:cookie"></iconify-icon> Snacks</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:milk"></iconify-icon> Milk & Dairy</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark d-flex align-items-center gap-2"><iconify-icon
+                  icon="lucide:cake"></iconify-icon> Bakery & Breads</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Links with Accordion -->
+      <ul class="mobileNavList list-unstyled">
+        <li class="mobileNavItem border-bottom py-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="index.html" class="fw-medium text-dark">Home</a>
+            <a class="text-muted" data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false"><i
+                class="bi bi-chevron-down"></i></a>
+          </div>
+          <div class="collapse ms-3 mt-2" id="mobileHomeSub">
+            <ul class="list-unstyled d-flex flex-column gap-2 text-muted small">
+              <li><a href="#" class="text-muted">Home 1 (Default)</a></li>
+              <li><a href="#" class="text-muted">Home 2 (Grocery)</a></li>
+              <li><a href="#" class="text-muted">Home 3 (Supermarket)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobileNavItem border-bottom py-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="fw-medium text-dark">Shop</a>
+            <a class="text-muted" data-bs-toggle="collapse" href="#mobileShopSub" role="button" aria-expanded="false"><i
+                class="bi bi-chevron-down"></i></a>
+          </div>
+          <div class="collapse ms-3 mt-2" id="mobileShopSub">
+            <ul class="list-unstyled d-flex flex-column gap-2 text-muted small">
+              <li><a href="#" class="text-muted">Shop Grid</a></li>
+              <li><a href="#" class="text-muted">Shop List</a></li>
+              <li><a href="#" class="text-muted">Product Details</a></li>
+              <li><a href="#" class="text-muted">Shopping Cart</a></li>
+              <li><a href="#" class="text-muted">Checkout</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobileNavItem border-bottom py-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="fw-medium text-dark">Pages</a>
+            <a class="text-muted" data-bs-toggle="collapse" href="#mobilePagesSub" role="button"
+              aria-expanded="false"><i class="bi bi-chevron-down"></i></a>
+          </div>
+          <div class="collapse ms-3 mt-2" id="mobilePagesSub">
+            <ul class="list-unstyled d-flex flex-column gap-2 text-muted small">
+              <li><a href="#" class="text-muted">About Us</a></li>
+              <li><a href="#" class="text-muted">Contact Us</a></li>
+              <li><a href="#" class="text-muted">FAQs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobileNavItem border-bottom py-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="fw-medium text-dark">Blog</a>
+            <a class="text-muted" data-bs-toggle="collapse" href="#mobileBlogSub" role="button" aria-expanded="false"><i
+                class="bi bi-chevron-down"></i></a>
+          </div>
+          <div class="collapse ms-3 mt-2" id="mobileBlogSub">
+            <ul class="list-unstyled d-flex flex-column gap-2 text-muted small">
+              <li><a href="#" class="text-muted">Blog Grid</a></li>
+              <li><a href="#" class="text-muted">Blog List</a></li>
+              <li><a href="#" class="text-muted">Blog Details</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobileNavItem border-bottom py-2">
+          <a href="#" class="fw-medium text-dark d-block">About Us</a>
+        </li>
+        <li class="mobileNavItem border-bottom py-2">
+          <a href="#" class="fw-medium text-dark d-block">Contact Us</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Contact Info -->
+      <div class="mobileContact mt-4 pt-3 border-top">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <iconify-icon icon="lucide:phone-call" class="fs-5 text-success"></iconify-icon>
+          <a href="tel:2195550114" class="fw-bold text-dark fs-6">(219) 555-0114</a>
+        </div>
+        <p class="text-muted small mb-0">Customer Support 24/7</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- *Mobile Offcanvas Menu End -->
+
+  <!-- *Main Section Start -->
+  <main>
+    <!-- *Hero Banner Section Start -->
+    <section class="heroBannerSection">
+      <div class="container position-relative">
+        <div class="heroSlider">
+
+          <!-- Slide 1 -->
+          <div class="heroSlide">
+            <div class="row align-items-center justify-content-between g-4">
+              <!-- Image & Badge (Left on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroImageWrapper position-relative">
+                  <img src="./assets/images/banner/banner1.png" alt="Fresh &amp; Healthy Organic Food"
+                    class="img-fluid heroImg">
+                  <div class="heroDiscountBadge">
+                    <span class="discountNum">70%</span>
+                    <span class="discountText">OFF</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text & Content (Right on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroContent ps-lg-4">
+                  <span class="heroSubtitle">Welcome to Shopery</span>
+                  <h1 class="heroTitle">Fresh &amp; Healthy<br>Organic Food</h1>
+                  <div class="heroOffer">
+                    <p class="offerText">Sale up to <span class="offerHighlight">70% OFF</span></p>
+                  </div>
+                  <p class="heroDescription">Free shipping on all your order. we deliver, you enjoy</p>
+                  <a href="#" class="heroBtn">
+                    <span>Shop now</span>
+                    <iconify-icon icon="lucide:arrow-right" class="btnIcon"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="heroSlide">
+            <div class="row align-items-center justify-content-between g-4">
+              <!-- Image & Badge (Left on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroImageWrapper position-relative">
+                  <img src="./assets/images/banner/banner2.png" alt="Healthy Food &amp; Fresh Fruits"
+                    class="img-fluid heroImg">
+                  <div class="heroDiscountBadge">
+                    <span class="discountNum">70%</span>
+                    <span class="discountText">OFF</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text & Content (Right on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroContent ps-lg-4">
+                  <span class="heroSubtitle">Welcome to Shopery</span>
+                  <h1 class="heroTitle">Healthy Food &amp;<br>Fresh Fruits</h1>
+                  <div class="heroOffer">
+                    <p class="offerText">Sale up to <span class="offerHighlight">70% OFF</span></p>
+                  </div>
+                  <p class="heroDescription">Get 100% organic food with fast delivery at your doorstep</p>
+                  <a href="#" class="heroBtn">
+                    <span>Shop now</span>
+                    <iconify-icon icon="lucide:arrow-right" class="btnIcon"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="heroSlide">
+            <div class="row align-items-center justify-content-between g-4">
+              <!-- Image & Badge (Left on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroImageWrapper position-relative">
+                  <img src="./assets/images/banner/banner3.png" alt="Fresh Vegetables From Farm to Home"
+                    class="img-fluid heroImg">
+                  <div class="heroDiscountBadge">
+                    <span class="discountNum">70%</span>
+                    <span class="discountText">OFF</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text & Content (Right on Desktop) -->
+              <div class="col-lg-6 col-md-6">
+                <div class="heroContent ps-lg-4">
+                  <span class="heroSubtitle">Welcome to Shopery</span>
+                  <h1 class="heroTitle">Fresh Vegetables<br>From Farm to Home</h1>
+                  <div class="heroOffer">
+                    <p class="offerText">Sale up to <span class="offerHighlight">70% OFF</span></p>
+                  </div>
+                  <p class="heroDescription">Eat fresh, live healthy with farm-fresh organic vegetables</p>
+                  <a href="#" class="heroBtn">
+                    <span>Shop now</span>
+                    <iconify-icon icon="lucide:arrow-right" class="btnIcon"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- *Hero Banner Section End -->
+  </main>
+
+  <!-- *Main Section End -->
+
+  <!-- *Footer Section Start -->
+  <footer></footer>
+  <!-- *Footer Section End -->
+
+  <!-- *Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
